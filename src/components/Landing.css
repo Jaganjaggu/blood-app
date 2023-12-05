@@ -1,0 +1,55 @@
+.text-color-1 {
+    color: rgb(10, 15, 52);
+    font-weight: 800;
+    font-size: 50px;
+}
+
+
+.text-color-2 {
+    color: rgb(10, 15, 52);
+    font-size: 50px;
+}
+
+.landing-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 50px;
+}
+
+.land-right img{
+    width: 100%;
+}
+
+.landing-login{
+    background-color: #998989;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid #998989; 
+}
+
+.landing-login:hover{
+    background: none;
+    border: 1px solid #998989; 
+    color: black;
+}
+
+.landing-signup{
+    margin-left: 10px;
+    color: black;
+    padding: 5px 20px;
+    background: none;
+    border: 1px solid #998989; 
+}
+
+.landing-signup:hover{
+    border: 1px solid #998989;
+    background-color: #998989;
+    border: 1px solid #998989; 
+    color: white;
+}
+
+@media(max-width:800px){
+    .landing-container {
+        grid-template-columns: 1fr ;
+    }
+}

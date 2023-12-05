@@ -1,0 +1,79 @@
+.text-color-1 {
+    color: rgb(10, 15, 52);
+    font-weight: 800;
+    font-size: 50px;
+}
+
+
+.text-color-2 {
+    color: rgb(10, 15, 52);
+    font-size: 50px;
+}
+
+.hospital-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 50px;
+}
+
+.land-right img{
+    width: 100%;
+}
+
+.hospital-login{
+    background-color: #998989;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid #998989; 
+}
+
+.hospital-login:hover{
+    background: none;
+    border: 1px solid #998989; 
+    color: black;
+}
+
+.hospital-signup{
+    margin-left: 10px;
+    color: black;
+    padding: 5px 20px;
+    background: none;
+    border: 1px solid #998989; 
+}
+
+.hospital-signup:hover{
+    border: 1px solid #998989;
+    background-color: #998989;
+    border: 1px solid #998989; 
+    color: white;
+}
+
+.hospital-pages-section{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.hospital-pages-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    background-color: #efefefc7;
+    border-radius: 10px;
+    color:rgb(95, 95, 95);
+    border: 2px solid rgb(150, 150, 150); 
+    outline: 4px solid rgb(212, 212, 212);
+    font-weight: 600px;
+}
+.hospital-pages-section i{
+    font-size: 20px;
+}
+
+@media(max-width:800px){
+    .hospital-container {
+        grid-template-columns: 1fr ;
+    }
+}

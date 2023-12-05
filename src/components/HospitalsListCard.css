@@ -1,0 +1,12 @@
+.card-collection{
+    transition: 0.4s;
+}
+.card-collection:hover{
+    background-color: rgba(0, 0, 0, 0);
+    scale: 1.04;
+}
+
+.favourite-hospital{
+    font-size: 30px;
+    padding: 0 8px;
+}

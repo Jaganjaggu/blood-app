@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(0, 0%, 0%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --h1-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+}
+
+
+.register {
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+
+
+.register__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.register__form {
+    position: relative;
+    margin-inline: 1.5rem;
+    background-color: hsla(0, 0%, 0%, 0.1);
+    border: 2px solid hsla(0, 0%, 100%, .7);
+    padding: 2.5rem 1rem;
+    color: var(--white-color);
+    width: 600px;
+    border-radius: 1rem;
+    backdrop-filter: blur(16px);
+}
+
+.register__title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.25rem;
+}
+
+.register__inputs,
+.register__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.register__box_single {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    column-gap: .75rem;
+    align-items: center;
+    border: 2px solid hsla(0, 0%, 100%, .7);
+    padding-inline: 1.25rem;
+    border-radius: 4rem;
+}
+
+
+.register__inputs {
+    row-gap: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.register__box {
+    grid-template-columns: 1fr max-content;
+    column-gap: .75rem;
+    align-items: center;
+    border: 2px solid hsla(0, 0%, 100%, .7);
+    padding-inline: 1.25rem;
+    border-radius: 4rem;
+}
+
+.register__input,
+.register__button {
+    border: none;
+    outline: none;
+}
+
+.register__input {
+    width: 100%;
+    background: none;
+    color: var(--white-color);
+    padding-block: 1rem;
+}
+
+.register__input::placeholder {
+    color: var(--white-color);
+}
+
+.register__box i {
+    font-size: 1.25rem;
+}
+
+.register__check,
+.register__check-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register__check {
+    margin-bottom: 1rem;
+    font-size: var(--small-font-size);
+}
+
+.register__check-box {
+    column-gap: .5rem;
+}
+
+.register__check-input {
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--white-color);
+}
+
+.register__forgot {
+    color: var(--white-color);
+}
+
+.register__forgot:hover {
+    text-decoration: underline;
+}
+
+.register__button {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--white-color);
+    border-radius: 4rem;
+    color: var(--black-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.register__register {
+    font-size: var(--small-font-size);
+    text-align: center;
+}
+
+.register__register a {
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.register__register a:hover {
+    text-decoration: underline;
+}
+.selected-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+.selected-option i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.register-top-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.register-top-section-right{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.custom-select-container {
+
+    position: relative;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px 0;
+    padding-left: 20px;
+    width: 160px;
+    border-radius: 30px;
+    padding-right: 10px;    
+    cursor: pointer;
+}
+
+/* .selected-option {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+  .dropdown-content {
+    position: absolute;
+    top: 35px;
+    left: 60px;
+    /* width: 100%; */
+    border-radius: 5px;
+    /* background-color: rgba(255, 255, 255, 0.247); */
+    background-color: hsla(0, 0%, 0%, 0.623);
+    list-style: none;
+    padding:0;
+    backdrop-filter: blur(16px);
+    margin: 0;
+    /* display: none; */
+  }
+
+  .custom-dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* .custom-select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    display: grid;
+    color: rgb(255, 255, 255);
+} */
+
+.dropdown-content li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+.custom-select option {
+    color: black;
+    background-color: rgb(40, 192, 192);
+    margin-bottom: 10px;
+    font-size: larger;
+    padding: 20px;
+}
+
+.custom-select:focus {
+    outline: none;
+}
+
+
+.chooseType-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.type-person, .type-hospital{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid white;
+cursor: pointer;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.204);
+    transition: all 0.5s;
+}
+
+.type-person:hover, .type-hospital:hover{
+    background-color: rgba(0, 0, 0, 0.777);
+}
+
+.chooseType-container i {
+    font-size: 40px;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+
+
+@media (max-width:576px) {
+    .register__inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .register {
+        justify-content: center;
+    }
+
+    .register__form {
+        width: 90%;
+        padding-inline: 2.5rem;
+    }
+
+    .register__title {
+        margin-bottom: 2rem;
+    }
+}
